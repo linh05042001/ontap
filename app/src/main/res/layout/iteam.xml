@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img"
+            android:src="@drawable/img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtName"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Name job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtDes"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="mo ta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtGt"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Gioi tinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtDate"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Remove"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

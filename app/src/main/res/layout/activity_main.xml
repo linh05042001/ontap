@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhap cong viec"
+        android:textSize="20dp"
+        android:gravity="center" />
+<!--    <Spinner-->
+<!--        android:id="@+id/img"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+    <EditText
+        android:id="@+id/name"
+        android:hint="enter ten cong viec"
+        android:textSize="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/des"
+        android:hint="enter mo ta"
+        android:textSize="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/ck1"
+        android:text=" phuong an 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/ck2"
+        android:text=" phuong an 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/nam"
+            android:text="nam"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/nu"
+            android:text="nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/date"
+        android:hint="enter date"
+        android:textSize="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/add"
+            android:text="add"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/update"
+            android:text="update"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <SearchView
+        android:id="@+id/search"
+        android:queryHint="Search view"
+        android:iconifiedByDefault="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
